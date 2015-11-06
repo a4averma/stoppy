@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Stoppy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GJo-kp-G3R">
+                                <rect key="frame" x="0.0" y="28" width="600" height="44"/>
+                                <animations/>
+                                <color key="barTintColor" red="0.12941176470588237" green="0.68235294117647061" blue="0.74117647058823533" alpha="1" colorSpace="calibratedRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <fontDescription key="fontDescription" type="system" weight="ultraLight" pointSize="20"/>
+                                    <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textShadowColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Stoppy" id="Akd-ua-hZK"/>
+                                </items>
+                            </navigationBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3B-P9-wNU">
+                                <rect key="frame" x="0.0" y="556" width="600" height="44"/>
+                                <animations/>
+                                <items>
+                                    <barButtonItem systemItem="play" id="o4T-53-6GF">
+                                        <color key="tintColor" red="0.12941176469999999" green="0.68235294120000001" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="start:" destination="BYZ-38-t0r" id="w2P-9K-0Dc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="e8X-DI-4Lf"/>
+                                    <barButtonItem systemItem="pause" id="8v7-NT-VBR">
+                                        <color key="tintColor" red="0.12941176469999999" green="0.68235294120000001" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="pause:" destination="BYZ-38-t0r" id="hRb-V6-Cgg"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="pEq-Rb-syT"/>
+                                    <barButtonItem systemItem="stop" id="s7P-W0-SgR">
+                                        <color key="tintColor" red="0.12941176469999999" green="0.68235294120000001" blue="0.74117647060000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="stop:" destination="BYZ-38-t0r" id="8up-MR-T83"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yC-dT-Byz">
+                                <rect key="frame" x="244" y="270" width="113" height="60"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="113" id="Zzl-0q-ydQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZC4-PN-Wog">
+                                <rect key="frame" x="467" y="270" width="113" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U3a-e8-nKl">
+                                <rect key="frame" x="20" y="270" width="113" height="60"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="50"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="seconds" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aER-vG-guP">
+                                <rect key="frame" x="491" y="338" width="65" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zHE-6e-0Xi">
+                                <rect key="frame" x="270" y="338" width="61" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hours" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="byE-k8-7OH">
+                                <rect key="frame" x="54" y="338" width="44" height="21"/>
+                                <animations/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.1176470588" green="0.72941176470000002" blue="0.78823529410000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="U3a-e8-nKl" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="2W5-ss-crc"/>
+                            <constraint firstItem="byE-k8-7OH" firstAttribute="top" secondItem="U3a-e8-nKl" secondAttribute="bottom" constant="8" symbolic="YES" id="40V-7R-dkI"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="z3B-P9-wNU" secondAttribute="trailing" constant="-20" id="5eq-Z0-48E"/>
+                            <constraint firstItem="8yC-dT-Byz" firstAttribute="centerX" secondItem="zHE-6e-0Xi" secondAttribute="centerX" id="6F3-pG-zjm"/>
+                            <constraint firstItem="zHE-6e-0Xi" firstAttribute="centerX" secondItem="z3B-P9-wNU" secondAttribute="centerX" id="Aix-xb-gW6"/>
+                            <constraint firstItem="U3a-e8-nKl" firstAttribute="centerX" secondItem="byE-k8-7OH" secondAttribute="centerX" id="Dm1-Y6-gu0"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="aER-vG-guP" secondAttribute="trailing" constant="24" id="JUs-9d-15H"/>
+                            <constraint firstItem="GJo-kp-G3R" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="Rih-LX-6xd"/>
+                            <constraint firstItem="byE-k8-7OH" firstAttribute="baseline" secondItem="zHE-6e-0Xi" secondAttribute="baseline" id="VoF-i2-IIQ"/>
+                            <constraint firstItem="ZC4-PN-Wog" firstAttribute="baseline" secondItem="8yC-dT-Byz" secondAttribute="baseline" id="X35-u9-fgh"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="z3B-P9-wNU" secondAttribute="bottom" id="b3l-x8-emF"/>
+                            <constraint firstItem="aER-vG-guP" firstAttribute="centerX" secondItem="ZC4-PN-Wog" secondAttribute="centerX" id="hrg-hX-ZKU"/>
+                            <constraint firstItem="8yC-dT-Byz" firstAttribute="baseline" secondItem="U3a-e8-nKl" secondAttribute="baseline" id="hz9-oQ-uSC"/>
+                            <constraint firstItem="zHE-6e-0Xi" firstAttribute="baseline" secondItem="aER-vG-guP" secondAttribute="baseline" id="lAe-Eq-oOC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GJo-kp-G3R" secondAttribute="trailing" constant="-20" id="lec-0n-06x"/>
+                            <constraint firstItem="z3B-P9-wNU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-20" id="mMa-ns-sLD"/>
+                            <constraint firstItem="byE-k8-7OH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="34" id="nUM-a5-DGe"/>
+                            <constraint firstItem="ZC4-PN-Wog" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="qbZ-uP-Q5S"/>
+                            <constraint firstItem="GJo-kp-G3R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="tJx-WO-3dO"/>
+                            <constraint firstItem="U3a-e8-nKl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="tTW-lY-wts"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="hourLabel" destination="U3a-e8-nKl" id="8Db-iJ-x6O"/>
+                        <outlet property="minLabel" destination="8yC-dT-Byz" id="c3o-4O-WKp"/>
+                        <outlet property="secondLabel" destination="ZC4-PN-Wog" id="lrd-7W-i1M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
